@@ -1,0 +1,18 @@
+Origin: https://github.com/bfgroup/b2/issues/49
+Bug-Debian: https://bugs.debian.org/1016904
+--- boost1.74-1.74.0.orig/tools/build/src/engine/config.h
++++ boost1.74-1.74.0/tools/build/src/engine/config.h
+@@ -31,4 +31,13 @@ http://www.boost.org/LICENSE_1_0.txt)
+     #endif
+ #endif
+ 
++
++// To work around QEMU failures on mixed mode situations (32 vs 64) we need to
++// enable partial LFS support in system headers. And we need to do this before
++// any system headers are included.
++
++#if !defined(NT) && !defined(VMS)
++#   define _FILE_OFFSET_BITS 64
++#endif
++
+ #endif
