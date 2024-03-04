@@ -32,7 +32,7 @@ Subject: [PATCH] Add PEP-3149 compliant extension suffix discovery.
 +    # Discover and set extension suffix
 +    #
 +    debug-message "Checking for extension suffix..." ;
-+    local full-cmd = "from __future__ import print_function; import sysconfig; print(sysconfig.get_config_var('SO'))" ;
++    local full-cmd = "from __future__ import print_function; import sysconfig; print(sysconfig.get_config_var('EXT_SUFFIX'))" ;
 +    local full-cmd = $(interpreter-cmd)" -c \"$(full-cmd)\"" ;
 +    debug-message "running command '$(full-cmd)'" ;
 +    local result = [ SHELL $(full-cmd) : strip-eol : exit-status ] ;

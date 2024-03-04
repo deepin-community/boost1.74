@@ -1,5 +1,5 @@
+cmake_minimum_required(VERSION 3.5)
 project(Boost CXX)
-cmake_minimum_required(VERSION 3.0)
 
 FIND_PACKAGE(MPI REQUIRED)
 INCLUDE_DIRECTORIES(${MPI_INCLUDE_PATH})
