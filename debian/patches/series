@@ -32,3 +32,4 @@ qemu-fix.patch
 boost_1.74_asio_awaitable_missing_include.patch
 30.patch
 40.patch
+0001-deepin-sw_64-support.diff

@@ -1,3 +1,9 @@
+boost1.74 (1.74.0+ds1-23deepin2) unstable; urgency=medium
+
+  * feat: add sw64 support
+
+ -- Deepin Packages Builder <packages@deepin.org>  Tue, 27 May 2025 18:02:05 +0800
+
 boost1.74 (1.74.0+ds1-23deepin1) unstable; urgency=medium
 
   * No source change upload against python 3.12.
